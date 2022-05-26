@@ -7,6 +7,8 @@ import FavoriteProductModel from "@/views/FavoriteProductModel";
 import AvgStockByCenter from "@/views/AvgStockByCenter";
 import ContractInfo from "@/views/ContractInfo";
 import ProductByNumber from "@/views/ProductByNumber";
+import Import from "@/views/Import";
+import MonthlyAll from "@/views/MonthlyAll";
 const routes = [
   {
     path: '/',
@@ -19,9 +21,19 @@ const routes = [
     component: ContractCount
   },
   {
+    path: '/MonthlyAll',
+    name: 'MonthlyAll',
+    component: MonthlyAll
+  },
+  {
     path: '/NeverSoldProductCount',
     name: 'NeverSoldProductCount',
     component: NeverSoldProductCount
+  },
+  {
+    path: '/Import',
+    name: 'Import',
+    component: Import
   },
   {
     path: '/ProductByNumber',
