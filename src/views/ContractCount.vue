@@ -1,5 +1,6 @@
 <template>
   <div class="common-layout">
+    <img alt="Vue logo" src="../assets/logo.png">
     <el-table :data="tableData"  align="center" stripe="true">
       <el-table-column prop="number" label="ContractCount" width="200" />
     </el-table>
@@ -29,5 +30,12 @@ export default {
 </script>
 
 <style scoped>
+
+img {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
 
 </style>

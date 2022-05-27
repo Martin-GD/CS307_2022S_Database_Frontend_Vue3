@@ -63,4 +63,13 @@ img {
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #b3f5e6;
 }
+
+
+ img {
+   margin: 0 auto;
+   align-items: center;
+   text-align: center;
+   display: flex;
+ }
+
 </style>

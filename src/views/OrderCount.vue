@@ -1,4 +1,5 @@
 <template>
+  <img alt="Vue logo" src="../assets/logo.png">
   <div class="common-layout">
     <el-table :data="tableData"  align="center" stripe="true">
       <el-table-column prop="number" label="OrderCount" width="200" />
@@ -29,5 +30,12 @@ export default {
 </script>
 
 <style scoped>
+
+img {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
 
 </style>

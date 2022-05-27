@@ -1,7 +1,6 @@
 <template>
   <div class="common-layout">
-    <el-input v-model="input" placeholder="like CSE0000106"></el-input>
-    <el-button @click="handle_click" type="success">search</el-button>
+    <img alt="Vue logo" src="../assets/logo.png">
     <el-table :data="tableData"  align="center" stripe="true">
       <el-table-column prop="number" label="number" width="200" />
       <el-table-column prop="manager" label="manager" width="200" />
@@ -16,6 +15,8 @@
       <el-table-column prop="estimate_delivery_date" label="estimate_delivery_date" width="200" />
       <el-table-column prop="lodgement_date" label="lodgement_date" width="200" />
     </el-table>
+    <el-input v-model="input" placeholder="like CSE0000106"></el-input>
+    <el-button @click="handle_click" type="success">search</el-button>
   </div>
 </template>
 
@@ -46,3 +47,13 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+img {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+</style>

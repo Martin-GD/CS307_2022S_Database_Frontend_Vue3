@@ -1,5 +1,6 @@
 <template>
   <div class="common-layout">
+    <img alt="Vue logo" src="../assets/logo.png">
     <el-table :data="tableData"  align="center" stripe="true">
       <el-table-column prop="supply_center" label="supply_center" width="400" />
       <el-table-column prop="average" label="average" width="200" />
@@ -28,3 +29,13 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+img {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+</style>

@@ -9,6 +9,11 @@ import ContractInfo from "@/views/ContractInfo";
 import ProductByNumber from "@/views/ProductByNumber";
 import Import from "@/views/Import";
 import MonthlyAll from "@/views/MonthlyAll";
+import changeToManager from "@/views/changeToManager";
+import changeBack from "@/views/changeBack";
+import createRole from "@/views/createRole";
+import grantUsages from "@/views/grantUsages";
+import OrderSelect from "@/views/OrderSelect";
 const routes = [
   {
     path: '/',
@@ -16,9 +21,34 @@ const routes = [
     component: HomeView
   },
   {
+    path: '/createRole',
+    name: 'createRole',
+    component: createRole
+  },
+  {
+    path: '/grantUsages',
+    name: 'grantUsages',
+    component: grantUsages
+  },
+  {
     path: '/ContractCount',
     name: 'ContractCount',
     component: ContractCount
+  },
+  {
+    path: '/OrderSelect',
+    name: 'OrderSelect',
+    component: OrderSelect
+  },
+  {
+    path: '/changeToManager',
+    name: 'changeToManager',
+    component: changeToManager
+  },
+  {
+    path: '/changeBack',
+    name: 'changeBack',
+    component: changeBack
   },
   {
     path: '/MonthlyAll',
